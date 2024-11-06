@@ -33,7 +33,6 @@ public class PetControllerTest {
 	@Test
 	public void testFindAllPets() throws Exception {
 
-		//int NRO_RECORD = 73;
 		int ID_FIRST_RECORD = 1;
 
 		this.mockMvc.perform(get("/pets"))
@@ -86,7 +85,7 @@ public class PetControllerTest {
 	@Test
 	public void testCreatePet() throws Exception {
 
-		String PET_NAME = "Beethoven";
+		String PET_NAME = "mAX";
 		int TYPE_ID = 1;
 		int OWNER_ID = 1;
 		String BIRTH_DATE = "2020-05-20";
@@ -118,7 +117,7 @@ public class PetControllerTest {
 	@Test
 	public void testDeletePet() throws Exception {
 
-		String PET_NAME = "Beethoven3";
+		String PET_NAME = "Beethoven";
 		int TYPE_ID = 1;
 		int OWNER_ID = 1;
 		String BIRTH_DATE = "2020-05-20";
