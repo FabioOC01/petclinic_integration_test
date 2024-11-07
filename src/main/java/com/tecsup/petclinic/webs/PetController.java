@@ -29,8 +29,6 @@ import java.util.List;
 @Slf4j
 public class PetController {
 
-	String name = null;
-
 	//@Autowired
 	private PetService petService;
 

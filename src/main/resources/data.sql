@@ -14,4 +14,8 @@ VALUES
 ('Lucky', '2000-06-24', 2, 10),
 ('Sly', '2002-06-08', 1, 10);
 
-
+INSERT INTO owners (address, city, first_name, last_name, telephone)
+VALUES
+    ('123 Main St', 'Springfield', 'John', 'Doe', '555-1234'),
+    ('456 Oak St', 'Springfield', 'Jane', 'Smith', '555-5678'),
+    ('789 Pine St', 'Springfield', 'Robert', 'Brown', '555-9012');

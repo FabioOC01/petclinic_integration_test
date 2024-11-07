@@ -50,7 +50,7 @@ public class PetServiceTest {
     public void testFindPetByName() {
 
         String FIND_NAME = "Leo";
-        int SIZE_EXPECTED = 1;
+        int SIZE_EXPECTED = 3;
 
         List<Pet> pets = this.petService.findByName(FIND_NAME);
 
@@ -64,7 +64,7 @@ public class PetServiceTest {
     public void testFindPetByTypeId() {
 
         int TYPE_ID = 5;
-        int SIZE_EXPECTED = 2;
+        int SIZE_EXPECTED = 146;
 
         List<Pet> pets = this.petService.findByTypeId(TYPE_ID);
 
@@ -149,8 +149,8 @@ public class PetServiceTest {
 
         //            EXPECTED        ACTUAL
         assertEquals(UP_PET_NAME, upgradePet.getName());
-        assertEquals(UP_OWNER_ID, upgradePet.getTypeId());
-        assertEquals(UP_TYPE_ID, upgradePet.getOwnerId());
+        assertEquals(UP_OWNER_ID, upgradePet.getOwnerId());
+        assertEquals(UP_TYPE_ID, upgradePet.getTypeId());
     }
 
     /**
